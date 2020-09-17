@@ -18,10 +18,10 @@ $(document).ready(function(){
     });
 });
 
-function displayProperties(properties){
-    let clashes = properties.bookingClashes,
-        noResults = properties.noResults;
-    properties = properties.availableProperties;
+function displayProperties(data){
+    let clashes = data.bookingClashes,
+        noResults = data.noResults,
+        properties = data.availableProperties;
     $('.ui.cards.link').html('');
     $('.row.results-feedback').html('');
     let html = '',
